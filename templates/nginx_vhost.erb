@@ -1,0 +1,6 @@
+location /subsonic {
+	include proxy.conf;
+	include deny.conf;
+
+	proxy_pass http://localhost:4040/subsonic;
+}
