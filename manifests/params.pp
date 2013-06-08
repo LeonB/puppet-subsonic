@@ -14,14 +14,14 @@
 #
 class subsonic::params {
 
-	### Application related parameters
+  ### Application related parameters
 
-	$packages = $::operatingsystem ? {
-		default => ['subsonic', 'default-jre']
-	}
+  $packages = $::operatingsystem ? {
+    default => ['subsonic', 'default-jre']
+  }
 
-	$enabled = true
+  $enabled = true
 
-	$user = 'subsonic'
+  $user = 'subsonic'
 
 }
